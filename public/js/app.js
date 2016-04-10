@@ -12,7 +12,7 @@ const App = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Hi</h1>
+        <h1>Jessica Fooskas Make Up Artist</h1>
       </div>
     )
   }
