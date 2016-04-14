@@ -18,6 +18,7 @@ const App = React.createClass({
     return (
       <div>
         <Nav />
+        <div className="title">jessica fooskas makeup artist</div>
       </div>
     )
   }

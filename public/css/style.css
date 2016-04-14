@@ -3,4 +3,14 @@ html, body {
 }
 .navbar {
   background-color: rgb(250, 249, 249);
+  display: flex;
+  justify-content: space-around;
+}
+.title{
+  font-size: 55px;
+}
+.pic-1 {
+  background-image: url('http://lorempixel.com/300/450/animals/');
+  height: 450px;
+  width: 300px;
 }
