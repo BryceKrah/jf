@@ -6,13 +6,18 @@ const Router = ReactRouter.Router;
 const browserHistory = ReactRouter.browserHistory;
 const Route = ReactRouter.Route;
 const Link = ReactRouter.Link;
+const Nav = require('./nav.js')
+const Contact = require('./contact.js')
+const Bridal = require('./bridal.js')
+const Beauty = require('./beauty.js')
+const About = require('./about.js')
 
 
 const App = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Jessica Fooskas Make Up Artist</h1>
+        <Nav />
       </div>
     )
   }
@@ -20,7 +25,11 @@ const App = React.createClass({
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
-    </Route>
+    <Route path="/" component={App}/>
+    <Route path="about" component={About}/>
+    <Route path="beauty" component={Beauty}/>
+    <Route path="bridal" component={Bridal}/>
+    <Route path="contact" component={Contact}/>
+
   </Router>
 ), document.querySelector('#container'));
