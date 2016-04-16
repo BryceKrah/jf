@@ -7,6 +7,7 @@ const browserHistory = ReactRouter.browserHistory;
 const Route = ReactRouter.Route;
 const Link = ReactRouter.Link;
 const Nav = require('./nav.js')
+const Footer = require('./footer.js')
 const Contact = require('./contact.js')
 const Bridal = require('./bridal.js')
 const Beauty = require('./beauty.js')
@@ -18,7 +19,7 @@ const App = React.createClass({
     return (
       <div>
         <Nav />
-        <div className="title">jessica fooskas makeup artist</div>
+        <Footer />
       </div>
     )
   }
@@ -31,6 +32,5 @@ ReactDOM.render((
     <Route path="beauty" component={Beauty}/>
     <Route path="bridal" component={Bridal}/>
     <Route path="contact" component={Contact}/>
-
   </Router>
 ), document.querySelector('#container'));
