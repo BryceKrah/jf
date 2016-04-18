@@ -9,7 +9,9 @@ const Nav = React.createClass({
     return (
       <div className="navbar">
         <span className="left-nav">
-          <Link to="/">Home</Link>
+          <Link to="/">Jessica Fooskas</Link>
+        </span>
+        <span className="right-nav">
           <Link to="/about">About</Link>
           <Link to="/beauty">Beauty</Link>
           <Link to="/bridal">Bridal</Link>

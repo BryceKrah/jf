@@ -12,6 +12,7 @@ const Contact = require('./contact.js')
 const Bridal = require('./bridal.js')
 const Beauty = require('./beauty.js')
 const About = require('./about.js')
+const HomeSlider = require('./slider.js')
 
 
 const App = React.createClass({
@@ -19,6 +20,9 @@ const App = React.createClass({
     return (
       <div>
         <Nav />
+        <div className="title">jessica fooskas</div>
+        <div className="sub-title">makeup artist & hairstylist</div>
+        <HomeSlider />
         <Footer />
       </div>
     )
