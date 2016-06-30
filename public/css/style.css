@@ -1,84 +1,68 @@
-html, body {
-  background-color: rgb(250, 249, 249);
+/****************** BODY  ********************/
+
+.section{
+  text-align:center;
+  font-size: 3em;
+  height:500px;
+  border-top: 4px solid rgba(5,5,5,0.2)
 }
-.navbar {
-  background-color: rgb(250, 249, 249);
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 20px;
-}
-.navbar a {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.left-nav{
-  margin-right: 18%;
-}
-.footer {
-  background-color: rgb(250, 249, 249);
-  position: relative;
-  bottom: 0;
-  margin-top: 40px;
-  right: 40%;
-  left: 43%;
-}
-.icon{
-  height: 25px;
-  width: 25px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
-a {
+a{
   text-decoration: none;
   color: black;
-  font-weight: bold;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-.title{
-  font-size: 55px;
-  text-align: center;
-  padding: 2px;
-  margin: 2px;
-}
-.sub-title{
-    font-size: 27px;
-    text-align: center;
-    padding: 2px;
-    margin: 2px;
-}
-.pic-1 {
-  background-image: url('http://lorempixel.com/300/450/animals/');
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-}
-.container{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.long-text{
-  display: flex;
-  max-width: 88%;
-  font-size: 20px;
-}
-.text {
-  display: flex;
-  font-size: 20px;
-}
-.slide-container{
-  margin: 20px auto;
-  padding: 40px;
-  width: 80%;
-  color: #333;
-  background: black;
 }
 
-.slide-container img {
-  height: 400px;
-  width: 400px;
+/****************** NAVIGATION  ********************/
+
+.navbar{
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  height:50px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container{
+  display: flex;
+  justify-content: center;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.nav-item{
+  margin: 7px;
+  padding: 3px;
+  font-size: 20px;
+  /*border: 1px solid white;*/
+}
+
+/****************** HEADER & FOOTER  ********************/
+
+#header, #footer{
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: white;
+  z-index: 9;
+  text-align: center;
+  color: blue;
+  /*padding: 20px 0 0 0;*/
+}
+#header{
+  top: 0px;
+}
+#footer{
+  bottom: 0px
+}
+.footer{
+  height: 65px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.footer-item{
+  margin: 2px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

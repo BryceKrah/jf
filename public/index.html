@@ -2,15 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jessica Fooskas</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css" />
+  <title>Jessica Fooskas | NYC</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="./js/jquery.fullPage.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+  <script src="./js/app.js"></script>
 </head>
 <body>
+  <div id="header">
+    <div class="navbar">
+      <nav class-"nav-container logo">
+        <a href="#home"><nav class="nav-item">J F</nav></a>
+      </nav>
+      <nav class="nav-container">
+        <a href="#about"><nav class="nav-item">About</nav></a>
+        <a href="#beauty"><nav class="nav-item">Beauty</nav></a>
+        <a href="#bridal"><nav class="nav-item">Bridal</nav></a>
+        <a href="#contact"><nav class="nav-item">Contact</nav></a>
+      </nav>
+    </div>
+  </div>
 
-  <div id="container"></div>
+  <div id="fullpage">
+    <div class="section" data-anchor="#home">
+      <div>jessica fooskas</div>
+    </div>
+    <div class="section" data-anchor="#about">
+      <div>Jessica Fooskas is a Makeup Aritst in New York City.</div>
+    </div>
+    <div class="section" data-anchor="#beauty">
+      <div>A collection of Beaty work.</div>
+    </div>
+    <div class="section" data-anchor="#bridal">
+      <div>A collection of Bridal work.</div>
+    </div>
+    <div class="section" data-anchor="#contact">
+      <div>Contact Jessica:</div>
+    </div>
+  </div>
 
-  <script src="bundle.js"></script>
-
+  <div id="footer">
+    <div class="footer">
+      <a href="//twitter.com"><img src="./icon_imgs/twitter.png" class="footer-item"></img></a>
+      <a href="//instagram.com/jessicafooskas"><img src="./icon_imgs/instagram.png" class="footer-item"></img></a>
+      <a href="//facebook.com/jfooskas"><img src="./icon_imgs/facebook.png" class="footer-item"></img></a>
+      <a href="//pinterest.com/jfooskas"><img src="./icon_imgs/pinterest.png" class="footer-item"></img></a>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
 </body>
 </html>
