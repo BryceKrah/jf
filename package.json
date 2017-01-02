@@ -1,12 +1,19 @@
 {
   "name": "jf",
   "version": "1.0.0",
-  "description": "JessicaFooskas.com",
+  "description": "jessicafooskas.com",
   "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "http": "^0.0.0",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "watchify -t [ babelify --presets [ react es2015 ] ] ./public/js/app.js -o ./public/bundle.js -d",
-    "deploy": "./node_modules/browserify/bin/cmd.js -t [ babelify --presets [ react es2015 ] ] -t uglifyify ./public/js/app.js -o ./public/js/bundle.js -d"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +24,5 @@
   "bugs": {
     "url": "https://github.com/BryceKrah/jf/issues"
   },
-  "homepage": "https://github.com/BryceKrah/jf#readme",
-  "dependencies": {
-    "express": "^4.13.4",
-    "http": "0.0.0",
-    "morgan": "^1.7.0",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/BryceKrah/jf#readme"
 }
