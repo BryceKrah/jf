@@ -78,6 +78,14 @@ body {
   }
 }
 
+.banner{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin: 30px;
+  text-align: center;
+}
+
 /****************** NAVIGATION  ********************/
 
 .navbar{
