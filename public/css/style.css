@@ -34,7 +34,7 @@ body {
   min-height: 400px;
 }
 
-.form-footer{
+.form-subfooter{
   font-size: 12px;
 }
 
@@ -47,10 +47,22 @@ body {
   vertical-align: top;
   width: 60%;
 }
+@media (max-width: 760px){
+  .two-col-item-left{
+    display: block;
+    width: 100%;
+  }
+}
 .two-col-item-right{
   display: inline-block;
   vertical-align: top;
   width: 39%;
+}
+@media (max-width: 760px){
+  .two-col-item-right{
+    display: block;
+    width: 70%;
+  }
 }
 
 .three-col-img-container{
@@ -60,7 +72,11 @@ body {
   justify-content: center;
   flex-flow: row;
 }
-
+@media (max-width: 1000px){
+  .three-col-img-container{
+    flex-wrap: wrap;
+  }
+}
 
 /****************** NAVIGATION  ********************/
 
@@ -72,6 +88,11 @@ body {
   justify-content: space-around;
   align-items: baseline;
   /*margin-bottom: 20px;*/
+}
+@media (max-width: 760px){
+  .navbar {
+    flex-wrap: wrap;
+  }
 }
 .nav-container{
   display: flex;
@@ -92,22 +113,27 @@ body {
   height: 400px;
   background-color: grey;
 }
-/****************** HEADER & FOOTER  ********************/
+/****************** HEADER & subfooter  ********************/
 
 #header{
   margin-bottom: 20px;
 }
-#footer{
+#subfooter{
   /*position: relative;
   bottom: 3px;
   right: 8px;*/
 }
-.footer{
+.subfooter{
   display: flex;
   flex-flow: row;
   justify-content: space-around;
 }
-.footer-container{
+@media (max-width: 760px){
+  .subfooter{
+    flex-flow: column;
+  }
+}
+.subfooter-container{
   display: flex;
   justify-content: center;
   margin-top: -25px;
@@ -115,25 +141,45 @@ body {
   margin-right: 1px;
   margin-bottom: 0;
 }
-.footer-item{
+@media (max-width: 760px){
+  .subfooter-container{
+    justify-content: center;
+  }
+}
+.subfooter-item{
   height: 30px;
   width: 30px;
   margin-left: 6px;
   margin-right: 2px;
 }
-.footer-item-img{
+@media (max-width: 760px){
+  .subfooter-item{
+    margin-left: 15px;
+  }
+}
+.subfooter-item-img{
   height: 100%;
   width: 100%;
 }
-.footer-item-fb{
+.subfooter-item-fb{
   height: 35px;
   width: 35px;
   margin-left: 3px;
   margin-top: -3px;
 }
-.footer-item-pin{
+@media (max-width: 760px){
+  .subfooter-item-fb{
+    margin-left: 12px;
+  }
+}
+.subfooter-item-pin{
   height: 36px;
   width: 36px;
   margin-left: 3px;
   margin-top: -3px;
+}
+@media (max-width: 760px){
+  .subfooter-item-pin{
+    margin-left: 12px;
+  }
 }
