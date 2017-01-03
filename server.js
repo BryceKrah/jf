@@ -35,8 +35,8 @@ app.get('/bridal', (req,res)=>{
 app.get('/contact', (req,res)=>{
   res.render('pages/contact')
 })
-app.get('*', (req,res)=>{
-  res.render('index')
+app.get('/*', (req,res)=>{
+  res.render('pages/error')
 })
 
 const port = process.env.PORT || 3000;
