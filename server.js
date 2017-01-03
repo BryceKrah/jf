@@ -36,7 +36,7 @@ app.get('/contact', (req,res)=>{
   res.render('pages/contact')
 })
 app.get('*', (req,res)=>{
-  res.sendFile(path.join(__dirname, 'public/index.html'))
+  res.render('index')
 })
 
 const port = process.env.PORT || 3000;
