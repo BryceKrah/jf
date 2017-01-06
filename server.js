@@ -23,19 +23,20 @@ console.log("req.url",req.url);
 app.get('/', (req,res)=>{
   res.render('index')
 })
-app.get('/about', (req,res)=>{
+app.get('/about-jessica', (req,res)=>{
   res.render('pages/about')
 })
-app.get('/beauty', (req,res)=>{
-  res.render('pages/beauty')
-})
-app.get('/bridal', (req,res)=>{
+// app.get('/beauty', (req,res)=>{
+//   res.render('pages/beauty')
+// })
+app.get('/bridal-hair-and-makeup', (req,res)=>{
   res.render('pages/bridal')
 })
-app.get('/contact', (req,res)=>{
+app.get('/contact-jessica', (req,res)=>{
   res.render('pages/contact')
 })
-app.get('/*', (req,res)=>{
+app.get('*', (req,res)=>{
+  res.status(404);
   res.render('pages/error')
 })
 
