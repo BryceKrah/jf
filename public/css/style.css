@@ -24,6 +24,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+div {
+  padding: 0;
+  margin: 0;
+}
+img {
+  padding: 0;
+  margin: 0;
+}
 
 /****************** MAIN  ********************/
 
@@ -33,6 +41,8 @@ body {
 
 .section{
   min-height: 400px;
+  margin: 0;
+  padding: 0;
 }
 
 .form-subfooter{
@@ -88,7 +98,10 @@ body {
 }
 
 /****************** NAVIGATION  ********************/
-
+.header-wrapper{
+  margin: 0;
+  margin-bottom: 20px;
+}
 .navbar{
   background-color: white;
   width: 100%;

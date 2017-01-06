@@ -26,9 +26,6 @@ app.get('/', (req,res)=>{
 app.get('/about-jessica', (req,res)=>{
   res.render('pages/about')
 })
-// app.get('/beauty', (req,res)=>{
-//   res.render('pages/beauty')
-// })
 app.get('/bridal-hair-and-makeup', (req,res)=>{
   res.render('pages/bridal')
 })
