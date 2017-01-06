@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 app.get('/*', (req, res, next)=> {
 console.log("req.url",req.url);
-  if (req.url.indexOf("/icon_imgs/") === 0 || req.url.indexOf("/css/") === 0) {
+  if (req.url.indexOf("images/icon_imgs/") === 0 || req.url.indexOf("/css/") === 0 || req.url.indexOf("images/bridal_imgs/") === 0) {
     res.setHeader("Cache-Control", "public, max-age=2592000");
     res.setHeader("Expires", new Date(Date.now() + 2592000000).toUTCString());
   }
