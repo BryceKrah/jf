@@ -13,7 +13,7 @@ h1 {
   padding: 0;
 }
 h2 {
-  font-size: 26px;
+  font-size: 24px;
   color: gray;
   font-weight:300;
   margin: 0px;
@@ -43,7 +43,6 @@ img {
 
 .section{
   width: 100%;
-  min-height: 400px;
   margin: 0;
   padding: 0;
 }
@@ -132,18 +131,45 @@ img {
 /****************** NAVIGATION  ********************/
 .header-wrapper{
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: -9px;
+}
+.nav-head{
+  /*margin-left: 90px;*/
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  width: 100%;
+}
+@media (max-width: 760px){
+  .nav-head {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .navbar{
   background-color: white;
   width: 100%;
   min-height:50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-flow: column;
   align-items: baseline;
   margin-left: 4px;
   margin-right: 4px;
   /*margin-bottom: 20px;*/
+}
+.nav-subhead{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  align-items: baseline;
+
+}
+@media (max-width: 760px){
+  .nav-subhead {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 760px){
   .navbar {
